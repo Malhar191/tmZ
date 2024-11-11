@@ -1,0 +1,230 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #004d4d;
+    color: #ffffff;
+    padding: 20px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff9933;
+    border-bottom: 2px solid #ff9933;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background-color: #e0f7fa;
+    color: #004d4d;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Committee Section */
+.committee-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.committee-section:hover {
+    transform: scale(1.02);
+}
+
+.committee-section h3 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Job Cards */
+.job-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.job-card {
+    background-color: #e0f7fa;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(25% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.job-card h4 {
+    color: #004d4d;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Position Details Section */
+.job-details-section {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+}
+
+.job-details-section h2 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.job-details-section p,
+.job-details-section ul {
+    color: #555;
+    line-height: 1.6;
+}
+
+.job-details-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.apply-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #004d4d;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Committee Page Styling */
+.committee-hero {
+    background-color: #e0f7fa;
+    color: #004d4d;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.committee-hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.committee-details {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.committee-details h2 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+.committee-details p,
+.committee-details ul {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.7;
+}
+
+.committee-details ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .job-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .job-card {
+        width: 100%;
+    }
+    
+    .hero-content h1, .committee-hero h1 {
+        font-size: 2em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+}

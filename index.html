@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Marketplace - Opportunities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="opportunities.html" class="active">Opportunities</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Explore Committee Positions</h1>
+                <p>Choose from a range of leadership and executive roles across various student committees.</p>
+            </div>
+        </section>
+        <section class="job-listings">
+            <h2>Available Positions by Committee</h2>
+
+            <!-- Placement Committee -->
+            <div class="committee-section">
+                <h3><a href="placement.html">Placement Committee</a></h3>
+                <div class="job-cards">
+                    <div class="job-card" onclick="showPositionDetails('placement-president')">
+                        <h4>President</h4>
+                    </div>
+                    <div class="job-card" onclick="showPositionDetails('placement-vp')">
+                        <h4>Vice-President</h4>
+                    </div>
+                    <div class="job-card" onclick="showPositionDetails('placement-gs')">
+                        <h4>General Secretary</h4>
+                    </div>
+                    <div class="job-card" onclick="showPositionDetails('placement-exec')">
+                        <h4>Executive Member</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entrepreneurship & Innovation Council -->
+            <div class="committee-section">
+                <h3><a href="eic.html">Entrepreneurship & Innovation Council</a></h3>
+                <div class="job-cards">
+                    <div class="job-card" onclick="showPositionDetails('eic-president')">
+                        <h4>President</h4>
+                    </div>
+                    <div class="job-card" onclick="showPositionDetails('eic-vp')">
+                        <h4>Vice-President</h4>
+                    </div>
+                    <div class="job-card" onclick="showPositionDetails('eic-gs')">
+                        <h4>General Secretary</h4>
+                    </div>
+                    <div class="job-card" onclick="showPositionDetails('eic-exec')">
+                        <h4>Executive Member</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat similar structure for other committees with links to their respective pages -->
+            <div class="committee-section">
+                <h3><a href="prc.html">Public Relations Cell</a></h3>
+                <!-- Job cards for Public Relations Cell -->
+            </div>
+            <div class="committee-section">
+                <h3><a href="sports.html">Sports Committee</a></h3>
+                <!-- Job cards for Sports Committee -->
+            </div>
+            <div class="committee-section">
+                <h3><a href="student-council.html">Student Council</a></h3>
+                <!-- Job cards for Student Council -->
+            </div>
+            <div class="committee-section">
+                <h3><a href="cultural.html">Cultural Committee</a></h3>
+                <!-- Job cards for Cultural Committee -->
+            </div>
+
+        </section>
+        <section id="positionDetails" class="job-details-section">
+            <!-- Position details will be displayed here -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
